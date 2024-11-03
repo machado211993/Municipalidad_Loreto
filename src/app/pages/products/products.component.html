@@ -1,0 +1,12 @@
+<section class="container">
+  <h2 style="text-align: center; margin: 2rem 0">Nuestros Productos</h2>
+  <div class="products-grid">
+    <article *ngFor="let product of products" class="product-card card">
+      <img [src]="product.image" [alt]="product.name" class="product-image" />
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-price">\${{ product.price }}</p>
+      <p class="product-description">{{ product.description }}</p>
+      <button class="btn btn-primary">Comprar</button>
+    </article>
+  </div>
+</section>

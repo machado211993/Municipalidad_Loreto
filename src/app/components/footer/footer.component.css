@@ -1,0 +1,23 @@
+footer {
+  background: white;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid #e2e8f0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+.social-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.social-link:hover {
+  color: var(--primary);
+}
