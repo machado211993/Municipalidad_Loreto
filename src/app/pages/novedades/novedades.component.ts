@@ -2,12 +2,8 @@ import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 
 interface Novedad {
-  id: number;
-  titulo: string;
-  tipo: string; // Puede ser "Obra", "Evento" o "Acto"
   descripcion: string;
   imagen: string;
-  fecha: string;
 }
 
 @Component({
@@ -20,29 +16,42 @@ interface Novedad {
 export class NovedadesComponent {
   novedades: Novedad[] = [
     {
-      id: 1,
-      titulo: "Inauguración de nuevo puente",
-      tipo: "Obra",
-      descripcion: "Inauguración del nuevo puente sobre el río que conectará la ciudad con la zona norte.",
-      imagen: "assets/images/aviso.jpg",
-      fecha: "2024-11-01"
+
+      descripcion: "📌Estamos trabajando para ofrecer un ambiente adecuado y respetuoso a quienes visiten a sus seres queridos.👉 Durante estos días, desde la Municipalidad de Loreto , se está realizando la construcción de el muro perimetral, refacción de sanitarios, Pintura en la Capilla, limpieza y mantenimiento en general en el cementerio, con el objetivo de que el lugar luzca impecable para el 02 de Noviembre Día de los Fieles Difuntos",
+      imagen: "assets/images/novedad4.jpg",
+
+    },
+
+    {
+      descripcion: "👉Desde la Dirección de Turismo de la Municipalidad de Loreto, agradecemos a tutores y niños por la visita a, 𝗔𝘃𝗲𝗻𝘁𝘂𝗿𝗮 𝗜𝗯𝗲𝗿𝗮 𝗣𝗼𝗿𝘁𝗮𝗹 𝗦𝗮𝗻 𝗔𝗻𝘁𝗼𝗻𝗶𝗼 🐊, por promover y concientizar nuestro destino hacia nuestra comunidad .👨‍👩‍👦‍👦🙌 Gracias a parques y reserva  de la Provincia; Guardaparques , Jefe de Seccional Alejandro  Moreira y Guia Gonzalo  Solis.",
+      imagen: "assets/images/novedad5.jpg",
+
     },
     {
-      id: 2,
-      titulo: "Festival de música local",
-      tipo: "Evento",
-      descripcion: "Un evento cultural con la presentación de bandas locales en el parque central.",
-      imagen: "assets/images/aviso2.jpg",
-      fecha: "2024-11-10"
+
+      descripcion: "En el marco de la Noche de los Museos, se llevó adelante distintas actividades en el 𝗠𝘂𝘀𝗲𝗼 𝗦𝗮𝗰𝗿𝗼 de nuestra localidad, organizado por el Instituto de Cultura de la Provincia, en forma conjunta con la Municipalidad de Loreto, donde los vecinos y turistas disfrutaron de visitas guiadas 𝗚𝗿𝗮𝘁𝘂𝗶𝘁𝗮𝘀.",
+      imagen: "assets/images/novedad6.jpg",
+
     },
     {
-      id: 3,
-      titulo: "Acto por el Día de la Independencia",
-      tipo: "Acto",
-      descripcion: "Ceremonia oficial en la plaza principal para conmemorar el Día de la Independencia.",
-      imagen: "assets/images/evento.jpg",
-      fecha: "2024-07-09"
+
+      descripcion: "👉 El Intendente, El Viceintendente y los Concejales hicieron entrega de indumentaria de trabajar al área de obras públicas 👷👷‍♀️ y también se hizo entrega de camisetas y pelotas al equipo femenino de junior 👕⚽, que por primera vez van a participar del campeonato local.🥅",
+      imagen: "assets/images/novedad1.jpg",
+
     },
+    {
+
+      descripcion: "👉El municipio desea felices 42 años al Colegio Secundario Loreto.Celebramos su historia y compromiso por una educación de calidad para todos los loretanos.",
+      imagen: "assets/images/novedad2.jpg",
+
+    },
+    {
+
+      descripcion: "Hicimos entrega de nuevas estructuras para las prácticas de #Cestoball,camisetas y pelotas al equipo de Loreto y Colegio Secundario. También dimos apertura al Campeonato de #Fútbol Femenino entregando pelotas a los organizadores de este apasionante deporte🙌🏻",
+      imagen: "assets/images/novedad3.jpg",
+
+    },
+
     // Agrega más novedades según sea necesario
   ];
 }
