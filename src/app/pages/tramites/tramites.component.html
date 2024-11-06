@@ -1,0 +1,157 @@
+<div class="container my-5">
+  <!-- Header con imagen -->
+  <div class="text-center mb-5">
+    <img
+      [src]="'/assets/images/tramites.png'"
+      alt="Imagen de Trámite"
+      class="img-fluid rounded"
+      style="max-width: 100%; height: auto"
+    />
+  </div>
+
+  <!-- Título -->
+  <h1 class="text-center mb-5 text-primary">
+    Requisitos para Gestiones Municipales
+  </h1>
+
+  <!-- Acordeón de gestiones -->
+  <div class="accordion" id="gestionesAccordion">
+    <!-- Carnet de Conducir -->
+    <div class="accordion-item shadow-sm mb-3 rounded">
+      <h2 class="accordion-header" id="headingOne">
+        <button
+          class="accordion-button rounded-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Requisitos para Carnet de Conducir
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#gestionesAccordion"
+      >
+        <div class="accordion-body">
+          <p>
+            Para obtener el carnet de conducir, se deben cumplir con los
+            siguientes requisitos:
+          </p>
+          <ul>
+            <li>Documento de identidad vigente.</li>
+            <li>Comprobante de domicilio.</li>
+            <li>Examen médico aprobado.</li>
+            <li>Curso de educación vial aprobado.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Permisos para Eventos Bailables -->
+    <div class="accordion-item shadow-sm mb-3 rounded">
+      <h2 class="accordion-header" id="headingTwo">
+        <button
+          class="accordion-button rounded-3 collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          Requisitos para Permisos de Eventos Bailables
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#gestionesAccordion"
+      >
+        <div class="accordion-body">
+          <p>
+            Para organizar eventos bailables, se deben cumplir con los
+            siguientes requisitos:
+          </p>
+          <ul>
+            <li>Solicitar el permiso con 15 días de antelación.</li>
+            <li>Certificado de seguridad del lugar.</li>
+            <li>Contar con personal de seguridad adecuado.</li>
+            <li>Asegurar que el evento sea apto para todo público.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Habilitaciones Comerciales -->
+    <div class="accordion-item shadow-sm mb-3 rounded">
+      <h2 class="accordion-header" id="headingThree">
+        <button
+          class="accordion-button rounded-3 collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree"
+        >
+          Requisitos para Habilitaciones Comerciales
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingThree"
+        data-bs-parent="#gestionesAccordion"
+      >
+        <div class="accordion-body">
+          <p>
+            Para obtener habilitación comercial, se deben presentar los
+            siguientes documentos:
+          </p>
+          <ul>
+            <li>Inscripción de la actividad comercial.</li>
+            <li>Comprobante de pago de impuestos.</li>
+            <li>Certificado de sanidad e higiene del establecimiento.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inscripción de Títulos -->
+    <div class="accordion-item shadow-sm mb-3 rounded">
+      <h2 class="accordion-header" id="headingFour">
+        <button
+          class="accordion-button rounded-3 collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseFour"
+          aria-expanded="false"
+          aria-controls="collapseFour"
+        >
+          Requisitos para Inscripción de Títulos
+        </button>
+      </h2>
+      <div
+        id="collapseFour"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingFour"
+        data-bs-parent="#gestionesAccordion"
+      >
+        <div class="accordion-body">
+          <p>
+            Para la inscripción de títulos (automotor o catastro), se requiere:
+          </p>
+          <ul>
+            <li>Presentación del título original.</li>
+            <li>Copia del título de propiedad.</li>
+            <li>Pago de tasa administrativa.</li>
+            <li>Comprobante de identificación del propietario.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

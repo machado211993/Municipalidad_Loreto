@@ -1,27 +1,215 @@
-<section class="hero">
-  <div class="container">
-    <h1>Bienvenidos a Mi Tienda</h1>
-    <p class="subtitle">Descubre nuestra exclusiva colección de productos</p>
-    <a routerLink="/products" class="btn btn-primary">Ver Productos</a>
+<section class="hero bg-primary text-white py-5">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Bienvenidos a la Municipalidad de Loreto</h1>
+    <p class="lead">
+      Conectando a nuestra comunidad con las mejores soluciones y servicios.
+    </p>
+    <a routerLink="/novedades" class="btn btn-light btn-lg mt-4"
+      >Descubre nuestras Novedades</a
+    >
   </div>
 </section>
 
-<section class="container">
-  <div class="features">
-    <div class="feature card">
-      <h3>Calidad Premium</h3>
-      <p>
-        Todos nuestros productos son cuidadosamente seleccionados para
-        garantizar la mejor calidad.
-      </p>
+<!-- Carousel -->
+<section class="container my-5">
+  <div
+    id="carouselExampleAutoplaying"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          [src]="'/assets/images/carousel1.jpg'"
+          class="d-block w-100"
+          alt="Imagen 1"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          [src]="'/assets/images/carousel2.jpg'"
+          class="d-block w-100"
+          alt="Imagen 2"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          [src]="'/assets/images/carousel3.jpg'"
+          class="d-block w-100"
+          alt="Imagen 3"
+        />
+      </div>
     </div>
-    <div class="feature card">
-      <h3>Envío Rápido</h3>
-      <p>Entrega a domicilio en tiempo récord para tu comodidad.</p>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Nuestros Servicios</h2>
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Gestión Eficiente</h3>
+          <p class="card-text">
+            Optimización de procesos y atención ágil para todos los ciudadanos.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="feature card">
-      <h3>Atención Personalizada</h3>
-      <p>Nuestro equipo está disponible para ayudarte en todo momento.</p>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Acceso a Información</h3>
+          <p class="card-text">
+            Transparencia total en cada acción de la municipalidad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3 class="card-title">Proyectos Locales</h3>
+          <p class="card-text">
+            Fomentamos el desarrollo local con proyectos de impacto directo en
+            la comunidad.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Nuestros Logros</h2>
+    <p class="lead mb-4">
+      Aquí algunos de los proyectos que hemos llevado a cabo con éxito para
+      mejorar nuestra ciudad:
+    </p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            [src]="'/assets/images/banco.jpg'"
+            class="card-img-top"
+            alt="Proyecto 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Proyecto de Infraestructura</h5>
+            <p class="card-text">
+              Valdés inauguró la nueva sucursal del Banco de Corrientes en
+              Loreto
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            [src]="'/assets/images/aviso2.jpg'"
+            class="card-img-top"
+            alt="Proyecto 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Educación y Cultura</h5>
+            <p class="card-text">
+              Iniciativas que impulsan la educación y el arte en nuestra
+              comunidad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            [src]="'/assets/images/hospital.jpg'"
+            class="card-img-top"
+            alt="Proyecto 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Salud y Bienestar</h5>
+            <p class="card-text">
+              Mejoras en los centros de salud para ofrecer un servicio de
+              calidad.Avance de las obras del nuevo hospital de Loreto
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-white py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">¡Contáctanos!</h2>
+    <p class="lead mb-4">
+      Si tienes preguntas o necesitas más información, no dudes en ponerte en
+      contacto con nosotros.
+    </p>
+    <a
+      href="mailto:loretomunicipio2027@gmail.com"
+      class="btn btn-light btn-lg mb-4"
+    >
+      Envíanos un Correo
+    </a>
+
+    <!-- Redes Sociales -->
+    <div class="social-icons">
+      <a
+        href="https://api.whatsapp.com/send?phone=543794862502&text=Hola%20desde%20mi%20sitio%20web"
+        target="_blank"
+        class="btn btn-light mx-2"
+      >
+        <img
+          src="/assets/images/whatsap.png"
+          alt="WhatsApp"
+          style="width: 30px; height: 30px"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/loreto_provincia_de_corrientes?igsh=MXNtbTVlaHF4ZjN1dg=="
+        target="_blank"
+        class="btn btn-light mx-2"
+      >
+        <img
+          src="/assets/images/instagram.jpg"
+          alt="Instagram"
+          style="width: 30px; height: 30px"
+        />
+      </a>
+      <a
+        href="https://www.facebook.com/share/rhrUfQ9bYAm5QL9H/?mibextid=qi2Omg"
+        target="_blank"
+        class="btn btn-light mx-2"
+      >
+        <img
+          src="/assets/images/facebook.png"
+          alt="Facebook"
+          style="width: 30px; height: 30px"
+        />
+      </a>
+    </div>
+  </div>
+</section>
+<br />
+<br />
+<br />

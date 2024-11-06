@@ -1,40 +1,118 @@
-<section class="container">
-  <div class="contact-container card">
-    <h2 style="text-align: center; margin-bottom: 2rem">Contáctanos</h2>
-
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="name">Nombre</label>
-        <input id="name" type="text" formControlName="name" />
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" type="email" formControlName="email" />
-      </div>
-
-      <div class="form-group">
-        <label for="message">Mensaje</label>
-        <textarea id="message" formControlName="message"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary" style="width: 100%">
-        Enviar Mensaje
-      </button>
-    </form>
-
-    <div class="contact-info">
-      <div class="info-item">
-        <strong>Dirección:</strong>
-        <p>Tu dirección aquí</p>
-      </div>
-      <div class="info-item">
-        <strong>Teléfono:</strong>
-        <p>Tu teléfono aquí</p>
-      </div>
-      <div class="info-item">
-        <strong>Email:</strong>
-      </div>
-    </div>
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Contactos</h1>
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Dirección</th>
+          <th>Nombre</th>
+          <th>Celular</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Acción Social</td>
+          <td>Escobar Gabriela</td>
+          <td>
+            <div class="d-flex justify-content-between align-items-center">
+              <span>3794052310</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=543794862502&text=Hola%20desde%20mi%20sitio%20web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ms-3"
+              >
+                <img
+                  src="/assets/images/whatsap.png"
+                  alt="WhatsApp"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.15));
+                  "
+                />
+              </a>
+            </div>
+          </td>
+        </tr>
+        <!-- Los otros elementos siguen el mismo patrón -->
+        <tr>
+          <td>Tránsito</td>
+          <td>Gudiño Marcela</td>
+          <td>
+            <div class="d-flex justify-content-between align-items-center">
+              <span>3794742558</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=543794862502&text=Hola%20desde%20mi%20sitio%20web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ms-3"
+              >
+                <img
+                  src="/assets/images/whatsap.png"
+                  alt="WhatsApp"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.15));
+                  "
+                />
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Producción</td>
+          <td>Ramirez Magno</td>
+          <td>
+            <div class="d-flex justify-content-between align-items-center">
+              <span>3781408600</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=543794862502&text=Hola%20desde%20mi%20sitio%20web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ms-3"
+              >
+                <img
+                  src="/assets/images/whatsap.png"
+                  alt="WhatsApp"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.15));
+                  "
+                />
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Juventud</td>
+          <td>Ramirez Eva</td>
+          <td>
+            <div class="d-flex justify-content-between align-items-center">
+              <span>3781407323</span>
+              <a
+                href="https://api.whatsapp.com/send?phone=543794862502&text=Hola%20desde%20mi%20sitio%20web"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ms-3"
+              >
+                <img
+                  src="/assets/images/whatsap.png"
+                  alt="WhatsApp"
+                  style="
+                    width: 25px;
+                    height: 25px;
+                    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.15));
+                  "
+                />
+              </a>
+            </div>
+          </td>
+        </tr>
+        <!-- Continúa para los demás registros -->
+      </tbody>
+    </table>
   </div>
-</section>
+</div>

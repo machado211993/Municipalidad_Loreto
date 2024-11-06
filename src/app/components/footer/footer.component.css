@@ -3,21 +3,39 @@ footer {
   padding: 2rem 0;
   margin-top: 4rem;
   border-top: 1px solid #e2e8f0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white; /* Puedes cambiar este color si lo deseas */
+  color: black;
+  z-index: 1000;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px; /* Puedes ajustarlo según tu diseño */
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
 .social-links {
   display: flex;
   gap: 1rem;
 }
+
 .social-link {
   color: var(--text);
   text-decoration: none;
   transition: color 0.2s;
 }
+
 .social-link:hover {
   color: var(--primary);
+}
+
+/* Asegura que el contenido principal no se solape con el footer */
+body {
+  margin-bottom: 50px; /* Ajusta el espacio según el tamaño del footer */
 }
