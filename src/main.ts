@@ -7,22 +7,37 @@ import { routes } from './app/app.routes';
 import { importProvidersFrom } from '@angular/core';
 
 @Component({
-  selector: 'app-root', //aca inicia la aplicacion
+  selector: 'app-root', // Aca inicia la aplicacion
   standalone: true,
   imports: [RouterOutlet, RouterModule, HeaderComponent, FooterComponent],
   template: `
- <nav>
-  <app-header></app-header>
-</nav>
-<main class="content-container">
-  <router-outlet></router-outlet>
-</main>
-<footer>
-  <app-footer></app-footer>
-</footer>
+    <div class="content-wrapper">
+      <app-header></app-header>
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
+  `,
+  styles: [`
+    /* Asegura que la página ocupe toda la altura de la pantalla */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-    
-  `
+    /* Contenedor principal que ocupa el espacio restante */
+    .content-wrapper {
+      flex: 1;
+      padding-bottom: 80px; /* Agregamos un poco de espacio abajo del contenido */
+    }
+
+    /* Footer en la parte inferior */
+    app-footer {
+      margin-top: 40px; /* Separación entre el contenido y el footer */
+      margin-bottom: 20px; /* Opcional: espaciado adicional para separar el footer de la base */
+    }
+  `]
 })
 export class App {
   constructor() { }

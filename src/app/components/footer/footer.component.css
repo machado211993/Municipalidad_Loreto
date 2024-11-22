@@ -34,8 +34,3 @@ footer {
 .social-link:hover {
   color: var(--primary);
 }
-
-/* Asegura que el contenido principal no se solape con el footer */
-body {
-  margin-bottom: 50px; /* Ajusta el espacio según el tamaño del footer */
-}
