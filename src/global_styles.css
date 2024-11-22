@@ -19,12 +19,26 @@ body {
   color: var(--text);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+/* Asegura que el body ocupe toda la altura de la ventana */
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
+/* El contenedor principal con flexbox */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Aseguramos que el router-outlet ocupe el espacio disponible */
+.content-container router-outlet {
+  flex: 1; /* Hace que el router-outlet ocupe el espacio disponible */
+}
+
+/* Estilo de los botones */
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
@@ -43,6 +57,7 @@ body {
   background-color: var(--primary-dark);
 }
 
+/* Estilo de las tarjetas */
 .card {
   background: white;
   border-radius: 1rem;
@@ -52,4 +67,12 @@ body {
 
 .card:hover {
   transform: translateY(-4px);
+}
+
+/* Footer en la parte inferior */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }

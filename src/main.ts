@@ -7,15 +7,21 @@ import { routes } from './app/app.routes';
 import { importProvidersFrom } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-root', //aca inicia la aplicacion
   standalone: true,
   imports: [RouterOutlet, RouterModule, HeaderComponent, FooterComponent],
   template: `
-    <app-header></app-header>
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-    <app-footer></app-footer>
+ <nav>
+  <app-header></app-header>
+</nav>
+<main class="content-container">
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <app-footer></app-footer>
+</footer>
+
+    
   `
 })
 export class App {

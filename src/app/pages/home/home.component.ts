@@ -5,7 +5,7 @@ import { NovedadesComponent } from "../novedades/novedades.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, NovedadesComponent],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
