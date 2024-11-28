@@ -69,3 +69,22 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.novedad-card {
+  height: 100%; /* Asegura que todas las cartas ocupen la misma altura */
+  display: flex;
+  flex-direction: column; /* Organiza contenido verticalmente */
+}
+
+.novedad-image {
+  height: 200px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes no se deformen */
+}
+
+.card-body {
+  flex-grow: 1; /* Permite que el contenido textual crezca uniformemente */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center; /* Centra el texto horizontalmente */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}

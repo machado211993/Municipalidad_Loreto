@@ -68,3 +68,32 @@ h1 {
   text-decoration: none;
   cursor: pointer;
 }
+
+.card {
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+  display: flex;
+  flex-direction: column; /* Acomoda el contenido verticalmente */
+  justify-content: space-between; /* Separa los elementos de forma uniforme */
+}
+
+.card-img-top {
+  height: 200px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
+}
+
+.card-body {
+  flex-grow: 1; /* Permite que el contenido textual ocupe el espacio necesario */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente */
+  text-align: center; /* Alinea el texto horizontalmente */
+}
+
+.card-title {
+  font-size: 1.2rem; /* Ajusta el tamaño del título */
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem; /* Ajusta el tamaño del texto */
+}
