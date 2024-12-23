@@ -4,6 +4,7 @@ import { NovedadesComponent } from './pages/novedades/novedades.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TramitesComponent } from './pages/tramites/tramites.component';
 import { AutoridadesComponent } from './pages/autoridades/autoridades.component';
+import { VideoComponent } from './components/video/video.component';
 
 
 
@@ -13,5 +14,6 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'autoridades', component: AutoridadesComponent },
     { path: 'tramites', component: TramitesComponent },
+    { path: 'videos', component: VideoComponent },
     { path: '**', redirectTo: '' }
 ];

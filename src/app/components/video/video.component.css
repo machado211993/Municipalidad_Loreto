@@ -1,0 +1,14 @@
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .responsive-video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
