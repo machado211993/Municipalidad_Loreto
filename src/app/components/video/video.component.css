@@ -1,14 +1,21 @@
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  .responsive-video {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #000;
-    border-radius: 8px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+video {
+  max-width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  max-height: 90vh; /* No supera el 90% de la altura de la pantalla */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+}

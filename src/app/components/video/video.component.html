@@ -1,7 +1,4 @@
 <div class="video-container">
-    <video controls [src]="'/assets/images/videoloreto.mp4'" *ngIf="videoUrl; else noVideo" class="responsive-video"></video>
-    <ng-template #noVideo>
-      <p>No video available. Please provide a valid URL.</p>
-    </ng-template>
-  </div>
-  
+  <video [src]="videoUrl" controls *ngIf="videoUrl"></video>
+  <p *ngIf="!videoUrl">No se ha proporcionado una URL de video.</p>
+</div>
