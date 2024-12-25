@@ -76,11 +76,6 @@ h1 {
   justify-content: space-between; /* Separa los elementos de forma uniforme */
 }
 
-.card-img-top {
-  height: 200px; /* Ajusta la altura de las imágenes */
-  object-fit: cover; /* Asegura que las imágenes mantengan sus proporciones */
-}
-
 .card-body {
   flex-grow: 1; /* Permite que el contenido textual ocupe el espacio necesario */
   display: flex;
@@ -97,3 +92,11 @@ h1 {
 .card-text {
   font-size: 0.9rem; /* Ajusta el tamaño del texto */
 }
+.card-img-top {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 200px; /* Ajusta esta altura según lo que necesites */
+  object-fit: contain; /* La imagen se adapta completamente al contenedor */
+  background-color: #f8f9fa; /* Color de fondo opcional para los espacios vacíos */
+  border-radius: 0.5rem; /* Mantiene bordes suaves */
+}
+
