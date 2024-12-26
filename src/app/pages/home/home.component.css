@@ -97,31 +97,3 @@ h1 {
 .card-text {
   font-size: 0.9rem; /* Ajusta el tamaño del texto */
 }
-.video-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Espaciado entre los elementos */
-  justify-content: center; /* Centrar los videos */
-}
-
-.video-item {
-  flex: 0 0 calc(33.333% - 20px); /* Tres columnas por fila, ajusta según sea necesario */
-  max-width: 300px; /* Tamaño máximo de cada video */
-  border: 2px solid #ccc; /* Opcional: borde para los videos */
-  border-radius: 10px; /* Bordes redondeados */
-  overflow: hidden; /* Asegura que el contenido no se desborde */
-  background-color: #f8f9fa; /* Opcional: color de fondo */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra atractiva */
-}
-
-.video-item video {
-  width: 100%; /* Ajustar al contenedor */
-  height: auto; /* Mantener la proporción del video */
-  object-fit: cover; /* Ajustar el contenido sin distorsión */
-}
-
-@media (max-width: 768px) {
-  .video-item {
-    flex: 0 0 100%; /* Videos a pantalla completa en dispositivos pequeños */
-  }
-}
