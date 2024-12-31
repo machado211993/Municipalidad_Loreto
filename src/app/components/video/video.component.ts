@@ -12,4 +12,5 @@ import { RouterLink } from '@angular/router';
 export class VideoComponent {
   // Input property to dynamically pass the video URL
   @Input() videoUrl: string = '';
+
 }
