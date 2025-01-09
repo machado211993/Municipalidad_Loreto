@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NovedadesComponent } from "../novedades/novedades.component";
 import { VideoComponent } from "../../components/video/video.component";
-import { EventoProximoComponent } from "../evento-proximo/evento-proximo.component";
+import { ProximoEventoComponent } from '../proximo-evento/proximo-evento.component';
+import { NovedadComponent } from '../novedad/novedad.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, EventoProximoComponent],
+  imports: [RouterLink, ProximoEventoComponent, NovedadComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

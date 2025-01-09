@@ -1,0 +1,28 @@
+<section class="container">
+    <div class="row">
+      <article
+        *ngFor="let evento of eventos"
+        class="col-12 col-sm-6 col-md-4 mb-4"
+      >
+        <div class="novedad-card card">
+          <!-- Imagen de la carta con zoom -->
+          <img
+            [src]="evento.imagen"
+            class="novedad-image card-img-top"
+            (click)="openZoom(evento.imagen)"
+          />
+          <div class="card-body">
+            <p class="novedad-descripcion card-text">{{ evento.descripcion }}</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  
+  
+  <!-- Modal para el zoom de la imagen -->
+  <div id="zoomModal" class="zoom-modal">
+    <span class="close" (click)="closeZoom()">&times;</span>
+    <img id="zoomImage" class="zoom-image" />
+  </div>
+  

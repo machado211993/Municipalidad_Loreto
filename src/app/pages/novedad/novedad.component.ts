@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { VideoComponent } from '../../components/video/video.component';
 
 @Component({
-  selector: 'app-evento-proximo',
+  selector: 'app-novedad',
   standalone: true,
   imports: [VideoComponent],
-  templateUrl: './evento-proximo.component.html',
-  styleUrl: './evento-proximo.component.css'
+  templateUrl: './novedad.component.html',
+  styleUrl: './novedad.component.css'
 })
-export class EventoProximoComponent {
+export class NovedadComponent {
 
 }

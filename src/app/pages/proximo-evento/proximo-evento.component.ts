@@ -1,20 +1,19 @@
-import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
+import { Component } from '@angular/core';
 
-interface Novedad {
+interface Evento {
   descripcion: string;
   imagen: string;
 }
-
 @Component({
-  selector: 'app-novedades',
+  selector: 'app-proximo-evento',
   standalone: true,
   imports: [NgFor],
-  templateUrl: './novedades.component.html',
-  styleUrls: ['./novedades.component.css']
+  templateUrl: './proximo-evento.component.html',
+  styleUrl: './proximo-evento.component.css'
 })
-export class NovedadesComponent {
-  novedades: Novedad[] = [
+export class ProximoEventoComponent {
+  eventos: Evento[] = [
     {
       descripcion: "📌Estamos trabajando para ofrecer un ambiente adecuado y respetuoso a quienes visiten a sus seres queridos.👉 Durante estos días, desde la Municipalidad de Loreto , se está realizando la construcción de el muro perimetral, refacción de sanitarios, Pintura en la Capilla, limpieza y mantenimiento en general en el cementerio, con el objetivo de que el lugar luzca impecable para el 02 de Noviembre Día de los Fieles Difuntos",
       imagen: "assets/images/novedad4.jpg",
