@@ -51,23 +51,31 @@ h1 {
   display: block;
 }
 
-/* Estilo para el botón de cerrar */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
+  /* Estilo para el botón de cerrar */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #ffffff; /* Color blanco */
+    font-size: 60px; /* Aumento del tamaño */
+    font-weight: bold;
+    background-color: rgba(30, 51, 242, 0.7); /* Fondo rojo con transparencia */
+    border: none;
+    border-radius: 50%; /* Hacer el botón circular */
+    padding: 10px; /* Espaciado para hacerlo más grande */
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(7, 126, 224, 0.2); /* Agregar sombra para resaltar el botón */
+  }
+  
+  /* Efecto al pasar el mouse por encima */
+  .close:hover,
+  .close:focus {
+    color: #ffffff; /* Color blanco al pasar el mouse */
+    background-color: #1092e8; /* Fondo rojo sólido */
+    cursor: pointer;
+    transform: scale(1.2); /* Aumentar el tamaño del botón */
+    box-shadow: 0 0 15px rgba(9, 173, 223, 0.6); /* Sombra más intensa al pasar el mouse */
+  }
 
 .card {
   height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
