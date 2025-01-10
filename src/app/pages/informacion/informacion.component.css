@@ -85,7 +85,7 @@
   }
   
   .novedad-image {
-    height: 350px; /* Ajusta la altura de las imágenes */
+    height: auto;  /* Ajusta la altura de las imágenes */
     object-fit: cover; /* Asegura que las imágenes no se deformen */
   }
   
