@@ -41,8 +41,15 @@ nav {
   color: #0056b3;
 }
 
-/* Logo dentro de la navbar */
+
+/* Asegura que el logo se mantenga fijo en la izquierda */
+.logo {
+  flex: 0 1 auto; /* No permite que se estire, se mantiene a su tamaño */
+  margin-right: 20px; /* Añadir un pequeño margen derecho si es necesario */
+}
+
+/* Ajusta el tamaño del logo para que no se desborde */
 .logo-img {
-  max-width: 120px; /* Ajusta el tamaño máximo del logo */
-  height: auto;
+  max-width: 120px;  /* Tamaño máximo ajustable del logo */
+  height: auto;      /* Mantiene la proporción */
 }
