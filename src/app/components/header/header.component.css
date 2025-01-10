@@ -1,55 +1,36 @@
-/* Estilo general del navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+.logo-img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
 }
 
-/* Logo a la izquierda */
-.logo {
-  flex: 0 1 auto;
-}
-
-/* Contenedor de los enlaces, alineado a la derecha */
 .nav-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end; /* Alinea los enlaces a la derecha */
-  flex: 1;
+  gap: 15px; /* Espaciado horizontal entre los enlaces */
 }
 
-/* Estilo de cada enlace de la barra de navegación */
 .nav-link {
+  color: black;
   text-decoration: none;
-  color: #333;
-  padding: 8px 16px;
-  font-size: 1rem;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-/* Hover para los enlaces */
 .nav-link:hover {
   color: #007bff;
+  text-decoration: none;
 }
 
-/* Estilo cuando un enlace está activo */
-.nav-link.active {
-  font-weight: bold;
+.nav-link:active {
   color: #0056b3;
 }
 
-
+.active {
+  color: #007bff;
+  font-weight: bold;
+}
 /* Asegura que el logo se mantenga fijo en la izquierda */
 .logo {
   flex: 0 1 auto; /* No permite que se estire, se mantiene a su tamaño */
   margin-right: 20px; /* Añadir un pequeño margen derecho si es necesario */
 }
 
-/* Ajusta el tamaño del logo para que no se desborde */
-.logo-img {
-  max-width: 120px;  /* Tamaño máximo ajustable del logo */
-  height: auto;      /* Mantiene la proporción */
-}
