@@ -6,6 +6,7 @@ import { AutoridadesComponent } from './pages/autoridades/autoridades.component'
 import { VideoComponent } from './components/video/video.component';
 import { NovedadComponent } from './pages/novedad/novedad.component';
 import { ProximoEventoComponent } from './pages/proximo-evento/proximo-evento.component';
+import { InformacionComponent } from './pages/informacion/informacion.component';
 
 
 
@@ -16,5 +17,6 @@ export const routes: Routes = [
     { path: 'autoridades', component: AutoridadesComponent },
     { path: 'tramites', component: TramitesComponent },
     { path: 'proximoevento', component: ProximoEventoComponent },
+    { path: 'informacion', component: InformacionComponent },
     { path: '**', redirectTo: '' }
 ];
