@@ -1,30 +1,48 @@
-.logo-img {
-  width: 120px;
-  height: auto;
-  object-fit: contain;
+/* Estilo general del navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
+/* Logo a la izquierda */
+.logo {
+  flex: 0 1 auto;
+}
+
+/* Contenedor de los enlaces, alineado a la derecha */
 .nav-links {
-  gap: 15px; /* Espaciado horizontal entre los enlaces */
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* Alinea los enlaces a la derecha */
+  flex: 1;
 }
 
+/* Estilo de cada enlace de la barra de navegación */
 .nav-link {
-  color: black;
   text-decoration: none;
-  font-weight: 500;
+  color: #333;
+  padding: 8px 16px;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
+/* Hover para los enlaces */
 .nav-link:hover {
   color: #007bff;
-  text-decoration: none;
 }
 
-.nav-link:active {
+/* Estilo cuando un enlace está activo */
+.nav-link.active {
+  font-weight: bold;
   color: #0056b3;
 }
 
-.active {
-  color: #007bff;
-  font-weight: bold;
+/* Logo dentro de la navbar */
+.logo-img {
+  max-width: 120px; /* Ajusta el tamaño máximo del logo */
+  height: auto;
 }

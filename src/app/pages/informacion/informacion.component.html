@@ -8,7 +8,7 @@
         <!-- Imagen de la carta con zoom -->
         <img
           [src]="informacion.imagen"
-          alt="Imagen relacionada"
+          alt="Imagen de la novedad"
           class="novedad-image card-img-top"
           (click)="openZoom(informacion.imagen)"
         />
@@ -22,10 +22,10 @@
   </div>
 </section>
 
-<!-- Modal para el zoom de la imagen -->
-<div id="zoomModal" class="zoom-modal d-none">
-  <div class="zoom-modal-content">
-    <span class="close fs-3" (click)="closeZoom()">&times;</span>
-    <img id="zoomImage" class="zoom-image img-fluid" alt="Zoom de imagen" />
+  
+  <!-- Modal para el zoom de la imagen -->
+  <div id="zoomModal" class="zoom-modal">
+    <span class="close" (click)="closeZoom()">&times;</span>
+    <img id="zoomImage" class="zoom-image" />
   </div>
-</div>
+  

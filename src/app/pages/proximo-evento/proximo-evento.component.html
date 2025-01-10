@@ -1,9 +1,6 @@
 <section class="container my-5">
   <div class="row g-4">
-    <article
-      *ngFor="let evento of eventos"
-      class="col-12 col-sm-6 col-md-4"
-    >
+    <article *ngFor="let evento of eventos" class="col-12 col-sm-6 col-md-4">
       <div class="novedad-card card shadow-sm h-100">
         <!-- Imagen de la carta con zoom -->
         <img
@@ -22,10 +19,11 @@
   </div>
 </section>
 
-<!-- Modal para el zoom de la imagen -->
-<div id="zoomModal" class="zoom-modal d-none">
-  <div class="zoom-modal-content">
-    <span class="close fs-3" (click)="closeZoom()">&times;</span>
-    <img id="zoomImage" class="zoom-image img-fluid" alt="Zoom de imagen" />
+  
+  
+  <!-- Modal para el zoom de la imagen -->
+  <div id="zoomModal" class="zoom-modal">
+    <span class="close" (click)="closeZoom()">&times;</span>
+    <img id="zoomImage" class="zoom-image" />
   </div>
-</div>
+  
