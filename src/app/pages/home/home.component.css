@@ -105,3 +105,27 @@ h1 {
 .card-text {
   font-size: 0.9rem; /* Ajusta el tamaño del texto */
 }
+
+/*copadisimo*/
+
+#subtitulo {
+  font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+  font-weight: bold; /* Para un efecto visual más destacado */
+  background: linear-gradient(90deg, #00ff00, #00aaff, #ff007f, #00ff00);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 3s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
