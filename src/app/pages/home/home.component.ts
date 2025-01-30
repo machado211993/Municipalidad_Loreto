@@ -4,11 +4,12 @@ import { VideoComponent } from "../../components/video/video.component";
 import { ProximoEventoComponent } from '../proximo-evento/proximo-evento.component';
 import { NovedadComponent } from '../novedad/novedad.component';
 import { InformacionComponent } from '../informacion/informacion.component';
+import { MapaComponent } from '../../components/mapa/mapa.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink, ProximoEventoComponent, NovedadComponent, InformacionComponent],
+  imports: [RouterLink, ProximoEventoComponent, NovedadComponent, InformacionComponent, MapaComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
