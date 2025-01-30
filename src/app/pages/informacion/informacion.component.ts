@@ -19,8 +19,8 @@ export class InformacionComponent {
       imagen: "assets/images/info3.jpg",
     },
     {
-      descripcion: "🗓️ 13 y 14  de Febrero, 20 y 21 de Febrero; Loreto te Espera,  para vivir nuestro Carnaval!!🪶 🥁.",
-      imagen: "assets/images/info4.jpg",
+      descripcion: "🗓️ 14 y 15  de Febrero, 21 y 22 de Febrero; Loreto te Espera,  para vivir nuestro Carnaval!!🪶 🥁.",
+      imagen: "assets/images/carnaval.jpg",
     },
     // Agrega más informacion según sea necesario
   ];

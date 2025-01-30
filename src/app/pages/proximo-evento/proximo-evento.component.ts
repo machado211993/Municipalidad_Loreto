@@ -16,7 +16,7 @@ export class ProximoEventoComponent {
   eventos: Evento[] = [
     {
       descripcion: "",
-      imagen: "assets/images/info4.jpg",
+      imagen: "assets/images/carnaval.jpg",
     },
     {
       descripcion: "",
