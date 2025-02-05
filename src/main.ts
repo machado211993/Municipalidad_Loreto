@@ -7,7 +7,7 @@ import { routes } from './app/app.routes';
 import { importProvidersFrom } from '@angular/core';
 
 @Component({
-  selector: 'app-root', // Aca inicia la aplicacion
+  selector: 'app-root', // Aca inicia la aplicacion //que llama el index html 
   standalone: true,
   imports: [RouterOutlet, RouterModule, HeaderComponent, FooterComponent],
   template: `
