@@ -14,8 +14,9 @@ import { importProvidersFrom } from '@angular/core';
     <div class="content-wrapper">
       <app-header></app-header>
       <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </div>
-    <app-footer></app-footer>
+    
   `,
   styles: [`
     /* Asegura que la página ocupe toda la altura de la pantalla */

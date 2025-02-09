@@ -12,12 +12,30 @@ export class InformacionComponent {
   informaciones: { descripcion: string; imagen: string }[] = [
     {
       descripcion: "",
+      imagen: "assets/images/info20.jpeg",
+    },
+    
+    {
+      descripcion: "",
+      imagen: "assets/images/info22.jpeg",
+    },
+    {
+      descripcion: "",
+      imagen: "assets/images/info21.jpeg",
+    },
+    {
+      descripcion: "",
       imagen: "assets/images/info10.jpeg",
     },
     {
       descripcion: "",
       imagen: "assets/images/info11.jpeg",
     },
+    {
+      descripcion: "",
+      imagen: "assets/images/info20.jpeg",
+    },
+   
     {
       descripcion: "MORATORIA MUNICIPAL 2025 📝 Ya podés financiar tu deuda municipal, en cuotas  y sin intereses.Tenes tiempo hasta el viernes 31 de Marzo.",
       imagen: "assets/images/info1.jpg",
