@@ -21,7 +21,7 @@ export class InformacionComponent {
     },
     {
       descripcion: "",
-      imagen: "assets/images/info21.jpeg",
+      imagen: "assets/images/yiyo.jpeg",
     },
     {
       descripcion: "",
