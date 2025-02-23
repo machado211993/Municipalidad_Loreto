@@ -12,7 +12,7 @@ export class InformacionComponent {
   informaciones: { descripcion: string; imagen: string }[] = [
     {
       descripcion: "",
-      imagen: "assets/images/info30.jpeg",
+      imagen: "assets/images/carnaval10.jpeg",
     },
 
     {
@@ -31,9 +31,10 @@ export class InformacionComponent {
       descripcion: "",
       imagen: "assets/images/info11.jpeg",
     },
+    
     {
       descripcion: "",
-      imagen: "assets/images/info20.jpeg",
+      imagen: "assets/images/info30.jpeg",
     },
 
     {
