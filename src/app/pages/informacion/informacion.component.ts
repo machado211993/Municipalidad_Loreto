@@ -12,56 +12,45 @@ export class InformacionComponent {
   informaciones: { descripcion: string; imagen: string }[] = [
     {
       descripcion: "",
-      imagen: "assets/images/cierre1.jpeg",
+      imagen: "assets/images/info1.jpeg",
+    },
+
+    {
+      descripcion: "Hoy vivimos una jornada increíble en el playón del Polideportivo Municipal 💪🏽, donde distintas áreas de la Municipalidad de Loreto brindaron atención y servicios a nuestros vecinos 🤝👨🏽‍💼 Estuvo presente el Intendente Prof. Orlando Maidana junto al equipo del CIC, Salud, Acción Social, Producción (con entrega de semillas 🌱), Oficina Móvil de Gestión, Ropero Solidario 👕, Turismo 🧭 y la Feria de Emprendedores 🛍️🎉 También compartimos Bingo, Truco 🃏 y cerramos con un delicioso chocolate para todos 🍫❤️ 🙏 Agradecemos al equipo de la Dirección General de Epidemiología del Ministerio de Salud de la Provincia por su valioso aporte.💚 !Seguimos trabajando cerca de la gente!",
+      imagen: "assets/images/info2.jpeg",
+    },
+    {
+      descripcion: "",
+      imagen: "assets/images/info3.jpeg",
     },
 
     {
       descripcion: "",
-      imagen: "assets/images/cierre2.jpeg",
+      imagen: "assets/images/info4.jpeg",
+    },
+   
+
+    {
+      descripcion: "",
+      imagen: "assets/images/info6.jpeg",
+    },
+     {
+      descripcion: "",
+      imagen: "assets/images/info5.jpeg",
     },
     {
       descripcion: "",
-      imagen: "assets/images/cierre3.jpeg",
-    },
-    {
-      descripcion: "",
-      imagen: "assets/images/carnaval10.jpeg",
+      imagen: "assets/images/actu1.jpeg",
     },
 
     {
       descripcion: "",
-      imagen: "assets/images/info31.jpeg",
+      imagen: "assets/images/actu4.jpeg",
     },
-    {
-      descripcion: "",
-      imagen: "assets/images/yiyo.jpeg",
-    },
-    {
-      descripcion: "",
-      imagen: "assets/images/info10.jpeg",
-    },
-    {
-      descripcion: "",
-      imagen: "assets/images/info11.jpeg",
-    },
+
     
-    {
-      descripcion: "",
-      imagen: "assets/images/info30.jpeg",
-    },
 
-    {
-      descripcion: "MORATORIA MUNICIPAL 2025 📝 Ya podés financiar tu deuda municipal, en cuotas  y sin intereses.Tenes tiempo hasta el viernes 31 de Marzo.",
-      imagen: "assets/images/info1.jpg",
-    },
-    {
-      descripcion: "🏕️ ¡Información Importante de Hospedajes de Loreto Corrientes para el Verano 2025! 🌞Desde la Municipalidad y la Dirección de Turismo, te compartimos diferentes opciones de estadía para disfrutar al máximo de tus vacaciones en nuestro querido Loreto. 🏖️",
-      imagen: "assets/images/info3.jpg",
-    },
-    {
-      descripcion: "🗓️ 14 y 15  de Febrero, 21 y 22 de Febrero; Loreto te Espera,  para vivir nuestro Carnaval!!🪶 🥁.",
-      imagen: "assets/images/carnaval.jpg",
-    },
+    
     // Agrega más informacion según sea necesario
   ];
 
