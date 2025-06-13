@@ -14,9 +14,21 @@
           style="cursor: zoom-in"
         />
         <div class="card-body d-flex align-items-center justify-content-center">
-          <p class="card-text text-center small text-secondary">
-            {{ informacion.descripcion }}
-          </p>
+          <ng-container *ngIf="i === 0; else textoNormal">
+            <a
+              [href]="informacion.descripcion"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-text text-center small text-primary text-decoration-underline"
+              style="cursor: pointer"
+              >Ir al enlace</a
+            >
+          </ng-container>
+          <ng-template #textoNormal>
+            <p class="card-text text-center small text-secondary">
+              {{ informacion.descripcion }}
+            </p>
+          </ng-template>
         </div>
       </div>
     </article>
