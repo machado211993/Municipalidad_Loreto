@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./informacion.component.css'],
 })
 export class InformacionComponent {
+  activeIndex = 0;
+
+  // funciones openZoom y closeZoom podés quitarlas si no las usás más
   informaciones: { descripcion: string; imagen: string }[] = [
     {
       descripcion:
@@ -64,20 +67,7 @@ export class InformacionComponent {
       imagen: 'assets/images/info3.jpg',
     },
   ];
-
-  openZoom(imagen: string) {
-    const modal = document.getElementById('zoomModal');
-    const zoomImage = document.getElementById('zoomImage') as HTMLImageElement;
-    if (modal) {
-      modal.style.display = 'block';
-      zoomImage.src = imagen;
-    }
-  }
-
-  closeZoom() {
-    const modal = document.getElementById('zoomModal');
-    if (modal) {
-      modal.style.display = 'none';
-    }
+  setActiveIndex(index: number) {
+    this.activeIndex = index;
   }
 }

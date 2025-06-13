@@ -9,9 +9,10 @@
           [src]="informacion.imagen"
           alt="Imagen de la novedad"
           class="card-img-top img-fluid rounded"
-          data-bs-toggle="modal"
-          [attr.data-bs-target]="'#modal' + i"
           style="cursor: zoom-in"
+          data-bs-toggle="modal"
+          data-bs-target="#carouselModal"
+          (click)="setActiveIndex(i)"
         />
         <div class="card-body d-flex align-items-center justify-content-center">
           <ng-container *ngIf="i === 0; else textoNormal">
@@ -21,8 +22,9 @@
               rel="noopener noreferrer"
               class="card-text text-center small text-primary text-decoration-underline"
               style="cursor: pointer"
-              >Ir al enlace para descargar la aplicacion de la radio</a
             >
+              Ir al enlace para descargar la aplicación de la radio
+            </a>
           </ng-container>
           <ng-template #textoNormal>
             <p class="card-text text-center small text-secondary">
@@ -35,32 +37,63 @@
   </div>
 </section>
 
-<ng-container *ngFor="let informacion of informaciones; let i = index">
-  <div
-    class="modal fade"
-    [id]="'modal' + i"
-    tabindex="-1"
-    [attr.aria-labelledby]="'modalLabel' + i"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-dark border-0">
-        <div class="modal-header border-0">
+<!-- Modal con Carousel para ampliar imágenes -->
+<div
+  class="modal fade"
+  id="carouselModal"
+  tabindex="-1"
+  aria-labelledby="carouselModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0">
+      <div class="modal-header border-0">
+        <button
+          type="button"
+          class="btn-close btn-close-white ms-auto"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+      <div class="modal-body p-0">
+        <div
+          id="informacionCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div
+              *ngFor="let info of informaciones; let idx = index"
+              class="carousel-item"
+              [class.active]="idx === activeIndex"
+            >
+              <img
+                [src]="info.imagen"
+                class="d-block w-100"
+                alt="Imagen ampliada"
+              />
+            </div>
+          </div>
           <button
+            class="carousel-control-prev"
             type="button"
-            class="btn-close btn-close-white ms-auto"
-            data-bs-dismiss="modal"
-            aria-label="Cerrar"
-          ></button>
-        </div>
-        <div class="modal-body p-0 d-flex justify-content-center">
-          <img
-            [src]="informacion.imagen"
-            alt="Zoom Imagen"
-            class="img-fluid rounded"
-          />
+            data-bs-target="#informacionCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#informacionCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
     </div>
   </div>
-</ng-container>
+</div>
