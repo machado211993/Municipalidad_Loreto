@@ -14,13 +14,14 @@ import { importProvidersFrom } from '@angular/core';
     <div class="d-flex flex-column min-vh-100">
       <app-header></app-header>
 
-      <main class="flex-grow-1 container my-4">
+      <main class="flex-grow-1 container-fluid my-4">
         <router-outlet></router-outlet>
       </main>
 
       <app-footer></app-footer>
     </div>
   `,
+
   styles: [
     `
       /* Asegura que la página ocupe toda la altura de la pantalla */
