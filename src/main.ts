@@ -7,45 +7,49 @@ import { routes } from './app/app.routes';
 import { importProvidersFrom } from '@angular/core';
 
 @Component({
-  selector: 'app-root', // Aca inicia la aplicacion //que llama el index html 
+  selector: 'app-root', // Aca inicia la aplicacion //que llama el index html
   standalone: true,
   imports: [RouterOutlet, RouterModule, HeaderComponent, FooterComponent],
   template: `
-    <div class="content-wrapper">
+    <div class="d-flex flex-column min-vh-100">
       <app-header></app-header>
-      <router-outlet></router-outlet>
+
+      <main class="flex-grow-1 container my-4">
+        <router-outlet></router-outlet>
+      </main>
+
       <app-footer></app-footer>
     </div>
-    
   `,
-  styles: [`
-    /* Asegura que la página ocupe toda la altura de la pantalla */
-    html, body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
+  styles: [
+    `
+      /* Asegura que la página ocupe toda la altura de la pantalla */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
 
-    /* Contenedor principal que ocupa el espacio restante */
-    .content-wrapper {
-      flex: 1;
-      padding-bottom: 80px; /* Agregamos un poco de espacio abajo del contenido */
-    }
+      /* Contenedor principal que ocupa el espacio restante */
+      .content-wrapper {
+        flex: 1;
+        padding-bottom: 80px; /* Agregamos un poco de espacio abajo del contenido */
+      }
 
-    /* Footer en la parte inferior */
-    app-footer {
-      margin-top: 40px; /* Separación entre el contenido y el footer */
-      margin-bottom: 20px; /* Opcional: espaciado adicional para separar el footer de la base */
-    }
-  `]
+      /* Footer en la parte inferior */
+      app-footer {
+        margin-top: 40px; /* Separación entre el contenido y el footer */
+        margin-bottom: 20px; /* Opcional: espaciado adicional para separar el footer de la base */
+      }
+    `,
+  ],
 })
 export class App {
-  constructor() { }
+  constructor() {}
 }
 
 bootstrapApplication(App, {
-  providers: [
-    importProvidersFrom(RouterModule.forRoot(routes))
-  ]
-}).catch(err => console.error(err));
+  providers: [importProvidersFrom(RouterModule.forRoot(routes))],
+}).catch((err) => console.error(err));

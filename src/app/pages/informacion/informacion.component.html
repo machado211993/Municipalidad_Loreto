@@ -1,19 +1,20 @@
 <section class="container my-5">
   <div class="row g-4">
     <article
-      *ngFor="let informacion of informaciones"
+      *ngFor="let informacion of informaciones; let i = index"
       class="col-12 col-sm-6 col-md-4"
     >
-      <div class="novedad-card card shadow-sm h-100">
-        <!-- Imagen de la carta con zoom -->
+      <div class="card shadow-sm h-100 border-0">
         <img
           [src]="informacion.imagen"
           alt="Imagen de la novedad"
-          class="novedad-image card-img-top"
-          (click)="openZoom(informacion.imagen)"
+          class="card-img-top img-fluid rounded"
+          data-bs-toggle="modal"
+          [attr.data-bs-target]="'#modal' + i"
+          style="cursor: zoom-in"
         />
-        <div class="card-body">
-          <p class="novedad-descripcion card-text text-justify">
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <p class="card-text text-center small text-secondary">
             {{ informacion.descripcion }}
           </p>
         </div>
@@ -22,10 +23,32 @@
   </div>
 </section>
 
-  
-  <!-- Modal para el zoom de la imagen -->
-  <div id="zoomModal" class="zoom-modal">
-    <span class="close" (click)="closeZoom()">&times;</span>
-    <img id="zoomImage" class="zoom-image" />
+<ng-container *ngFor="let informacion of informaciones; let i = index">
+  <div
+    class="modal fade"
+    [id]="'modal' + i"
+    tabindex="-1"
+    [attr.aria-labelledby]="'modalLabel' + i"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark border-0">
+        <div class="modal-header border-0">
+          <button
+            type="button"
+            class="btn-close btn-close-white ms-auto"
+            data-bs-dismiss="modal"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="modal-body p-0 d-flex justify-content-center">
+          <img
+            [src]="informacion.imagen"
+            alt="Zoom Imagen"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
   </div>
-  
+</ng-container>

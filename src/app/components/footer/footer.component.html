@@ -1,29 +1,65 @@
-<footer>
-  <div class="container footer-content">
-    <div>© 2024. Todos los derechos reservados.</div>
-    <div class="social-links">
+<footer class="bg-light py-4 mt-auto">
+  <div
+    class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+  >
+    <div class="text-muted small mb-3 mb-md-0">
+      © 2024. Todos los derechos reservados.
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+      <!-- Links sociales como texto -->
       <a
         href="https://www.facebook.com/share/14XL1QWYSN/"
-        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
         >Facebook</a
       >
       <a
         href="https://www.instagram.com/loreto_provincia_de_corrientes?igsh=MXNtbTVlaHF4ZjN1dg=="
-        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
         >Instagram</a
       >
       <a
         href="https://api.whatsapp.com/send?phone=543781494788&text=Hola%20desde%20mi%20sitio%20web"
-        class="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-decoration-none text-dark"
         >WhatsApp</a
       >
+
+      <!-- Iconos sociales -->
+      <a
+        href="https://wa.me/3781494788"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="d-inline-block"
+        aria-label="WhatsApp"
+      >
+        <img
+          src="/assets/images/whatsapp.png"
+          alt="WhatsApp"
+          style="height: 28px; width: auto"
+          class="rounded"
+        />
+      </a>
+
+      <a
+        href="https://www.instagram.com/loreto_provincia_de_corrientes?igsh=MXNtbTVlaHF4ZjN1dg=="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="d-inline-block"
+        aria-label="Instagram"
+      >
+        <img
+          src="/assets/images/instagram.png"
+          alt="Instagram"
+          style="height: 28px; width: auto"
+          class="rounded"
+        />
+      </a>
     </div>
-    <!-- Logo de WhatsApp -->
-    <a href="https://wa.me/3781494788" target="_blank">
-      <img [src]="'/assets/images/whatsapp.png'" alt="WhatsApp" class="whatsapp-logo">
-    </a>
-    <a href="https://www.instagram.com/loreto_provincia_de_corrientes?igsh=MXNtbTVlaHF4ZjN1dg=="  target="_blank">
-      <img [src]="'/assets/images/instagram.png'" alt="Instagram" class="instagram-logo">
-    </a>
   </div>
 </footer>
