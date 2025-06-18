@@ -1,4 +1,4 @@
-import { NgFor } from '@angular/common';
+import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Evento {
@@ -8,7 +8,7 @@ interface Evento {
 @Component({
   selector: 'app-proximo-evento',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgClass],
   templateUrl: './proximo-evento.component.html',
   styleUrl: './proximo-evento.component.css',
 })
