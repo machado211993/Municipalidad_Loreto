@@ -19,6 +19,15 @@ export class InformacionComponent {
       imagen: 'assets/images/radio.jpeg',
     },
     {
+      descripcion: '',
+      imagen: 'assets/images/miercoles.jpg',
+    },
+    {
+      descripcion:
+        '🏥 ¡Loreto sigue avanzando! 🏥💚En el día de hoy, junto a la directora del Hospital J. R. Piñeiro, Dra. Julia Torres de Ortiz, recibimos con gran emoción el nuevo equipamiento médico que formará parte del tan esperado Hospital Moderno J. R. Piñeiro, próximo a inaugurarse.Cada equipo que llega representa una mejora concreta en la salud pública, una inversión en el presente y el futuro de todos queridos Loretanos.Agradecemos profundamente al Gobierno Provincial por trabajar de manera conjunta con nuestra gestión para hacer realidad este gran paso para Loreto.El compromiso compartido entre Provincia y Municipio es el camino para seguir transformando la vida de nuestra comunidad.¡Estamos cada vez más cerca de ver este sueño cumplido!',
+      imagen: 'assets/images/miercoles2.jpg',
+    },
+    {
       descripcion:
         '✅ ¡Seguimos apostando al deporte!El equipo municipal hizo una gran entrega a la Dirección de Deportes para el campeonato de fútbol:🕒 Relojes digitales🟥🟨 Tarjetas🏳️‍🌈 Banderines⚽ Pelotas🛏️ Camilla🔊 Silbatos¡Gracias a una inversión que potencia el deporte local! ⚽🙌',
       imagen: 'assets/images/sabado3.jpeg',

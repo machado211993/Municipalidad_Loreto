@@ -1,41 +1,82 @@
-<!--<section class="container my-5">
-
+<section class="container my-5">
   <div class="row g-4">
-    <article *ngFor="let evento of eventos" class="col-12 col-sm-6 col-md-4">
-      <div class="novedad-card card shadow-sm h-100">
-         Imagen de la carta con zoom
+    <article
+      *ngFor="let evento of eventos; let i = index"
+      class="col-12 col-sm-6 col-md-4"
+    >
+      <div class="card shadow-sm h-100 border-0">
         <img
           [src]="evento.imagen"
           alt="Imagen del evento"
-          class="novedad-image card-img-top"
-          (click)="openZoom(evento.imagen)"
+          class="card-img-top img-fluid rounded"
+          style="cursor: zoom-in"
+          data-bs-toggle="modal"
+          data-bs-target="#carouselModalEventos"
+          (click)="setActiveIndexEvento(i)"
         />
-        <div class="card-body">
-          <p class="novedad-descripcion card-text text-justify">
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <p class="card-text text-center small text-secondary">
             {{ evento.descripcion }}
           </p>
         </div>
       </div>
     </article>
   </div>
-</section>-->
+</section>
 
-<!-- Contenido alternativo amigable cuando no hay videos -->
-<div class="text-center p-5">
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/4076/4076549.png"
-    alt="Sin novedades"
-    class="img-fluid mb-4"
-    style="max-width: 200px; opacity: 0.6"
-  />
-  <h4 class="text-secondary">No hay próximos eventos por el momento</h4>
-  <p class="text-muted">
-    Estamos trabajando para traerte las últimas actualizaciones. ¡Volvé pronto!
-  </p>
-</div>
-
-<!-- Modal para el zoom de la imagen -->
-<div id="zoomModal" class="zoom-modal">
-  <span class="close" (click)="closeZoom()">&times;</span>
-  <img id="zoomImage" class="zoom-image" />
+<!-- Modal con Carousel para ampliar imágenes de eventos -->
+<div
+  class="modal fade"
+  id="carouselModalEventos"
+  tabindex="-1"
+  aria-labelledby="carouselModalEventosLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0">
+      <div class="modal-header border-0">
+        <button
+          type="button"
+          class="btn-close btn-close-white ms-auto"
+          data-bs-dismiss="modal"
+          aria-label="Cerrar"
+        ></button>
+      </div>
+      <div class="modal-body p-0">
+        <div id="eventoCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div
+              *ngFor="let evento of eventos; let idx = index"
+              class="carousel-item"
+              [class.active]="idx === activeIndexEvento"
+            >
+              <img
+                [src]="evento.imagen"
+                class="d-block w-100"
+                alt="Imagen ampliada del evento"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#eventoCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#eventoCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
