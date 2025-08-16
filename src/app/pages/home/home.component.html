@@ -5,13 +5,21 @@
       Conectando a nuestra comunidad con las mejores soluciones y servicios.
     </p>
 
-    <a routerLink="/informacion" class="btn btn-light btn-lg mt-4"
+    <a routerLink="/novedad" class="btn btn-light btn-lg mt-4"
       >Descubre toda nuestra información</a
     >
   </div>
 </section>
 
-<!-- Carousel -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Nuestras Novedades</h2>
+  <br />
+  <div class="row text-center">
+    <app-novedad></app-novedad>
+  </div>
+</section>
+
+<!-- Carousel 
 <section class="container my-5">
   <div
     id="carouselExampleAutoplaying"
@@ -60,7 +68,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-</section>
+</section>-->
 
 <section class="container py-5">
   <h2 class="text-center mb-4">Nuestros Servicios</h2>
@@ -193,24 +201,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img
-            [src]="'/assets/images/novedad11.jpg'"
-            class="card-img-top"
-            alt="Proyecto 2"
-            (click)="openZoom('/assets/images/novedad11.jpg')"
-          />
-          <div class="card-body">
-            <!--<h5 class="card-title">"Proyecto de Infraestructura Vial"</h5>-->
-            <p class="card-text">
-              𝐌𝐚𝐧𝐭𝐞𝐧𝐢𝐦𝐢𝐞𝐧𝐭𝐨 𝐲 𝐌𝐞𝐣𝐨𝐫𝐚𝐬 𝐝𝐞𝐥 𝐂𝐞𝐦𝐞𝐧𝐭𝐞𝐫𝐢𝐨 𝐌𝐮𝐧𝐢𝐜𝐢𝐩𝐚𝐥 📌Estamos
-              trabajando para ofrecer un ambiente adecuado y respetuoso a
-              quienes visiten a sus seres queridos.
-            </p>
-          </div>
-        </div>
-      </div>
+
       <div class="col-md-4">
         <div class="card">
           <img
@@ -233,23 +224,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img
-            [src]="'/assets/images/novedad9.jpg'"
-            class="card-img-top"
-            alt="Proyecto 2"
-            (click)="openZoom('/assets/images/novedad9.jpg')"
-          />
-          <div class="card-body">
-            <!--<h5 class="card-title">"Proyecto de Infraestructura Vial"</h5>-->
-            <p class="card-text">
-              Con un gran esfuerzo y mano de obra Loretana, seguimos con la
-              construcción del cordón cuneta y el muro del Cementerio.
-            </p>
-          </div>
-        </div>
-      </div>
+
       <div class="col-md-4">
         <div class="card">
           <img
@@ -581,14 +556,6 @@
 
       <!-- Más tarjetas aquí... -->
     </div>
-  </div>
-</section>
-
-<section class="container py-5">
-  <h2 class="text-center mb-4">Nuestras Novedades</h2>
-  <br />
-  <div class="row text-center">
-    <app-novedad></app-novedad>
   </div>
 </section>
 
